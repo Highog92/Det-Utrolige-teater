@@ -1,8 +1,8 @@
 export function Homepage() {
 
-    return (
-        <section>
-
-      </section>
-    )
+  return (
+    <section>
+      <p>Forside</p>
+    </section>
+  )
 }

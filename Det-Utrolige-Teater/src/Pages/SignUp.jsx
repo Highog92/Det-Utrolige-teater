@@ -1,8 +1,8 @@
 export function SignUp() {
 
-    return (
-        <section>
-
-      </section>
-    )
+  return (
+    <section>
+      <p>Signup</p>
+    </section>
+  )
 }

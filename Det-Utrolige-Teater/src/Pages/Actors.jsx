@@ -1,8 +1,8 @@
 export function Actors() {
 
-    return (
-        <section>
-
-      </section>
-    )
+  return (
+    <section>
+      <p>Skuespiller</p>
+    </section>
+  )
 }

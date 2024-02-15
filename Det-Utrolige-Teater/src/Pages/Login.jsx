@@ -1,8 +1,8 @@
 export function Login() {
 
-    return (
-        <section>
-
-      </section>
-    )
+  return (
+    <section>
+      <p>Login</p>
+    </section>
+  )
 }

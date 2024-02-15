@@ -1,8 +1,8 @@
 export function ShowsEvents() {
 
-    return (
-        <section>
-
-      </section>
-    )
+  return (
+    <section>
+      <p>showsevents</p>
+    </section>
+  )
 }
