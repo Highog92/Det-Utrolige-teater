@@ -1,6 +1,6 @@
 import actorCardStyle from './ActorsCard.module.scss'
 import { Button } from '../Buttons/Button'
-
+import { Modal } from '../Modal/Modal'
 export function ActorsCard({ actorImg, name, decription }) {
 
     return (
@@ -8,15 +8,16 @@ export function ActorsCard({ actorImg, name, decription }) {
             <img src={actorImg} alt="Actor" />
             <figcaption>
                 <h3>{name}</h3>
-                <p>{decription}...</p>
+                <p>{decription.substring(0, 450)}...</p>
             </figcaption>
-            <Button
-                text="Læs Mere"
-                bgColor="var(--black)"
-                sizeH={"40px"}
-                sizeW={"110px"}
-            // action={handleClick}
-            />
+            <Modal>
+                <img src={actorImg} alt="Actor" />
+                {/* <figcaption> */}
+                    <h3>{name}</h3>
+                    <p>{decription}</p>
+                {/* </figcaption> */}
+            </Modal>
         </figure>
+
     )
 }

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Redacted+Script:wght@300;400;700&family=Rubik+Lines&display=swap');
+
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    filter: brightness(1.5);
+}
+
+.modalOverlay {
+    z-index: 500;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the alpha value for darkness */
+    backdrop-filter: blur(8px);
+    /* Adjust the blur value */
+}
+
+.modal {
+    z-index: 1000;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: rgb(165, 78, 78);
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+
+    .modalContent {
+        display: grid;
+
+        .close {
+            justify-self: end;
+            width: 25px;
+            font-size: 2em;
+            line-height: 0.8em;
+            margin-top: 3px;
+            color: white;
+        }
+
+        .close:hover {
+            filter: brightness(0.4);
+            cursor: pointer;
+        }
+
+        article {
+            margin-top: 3rem;
+            padding: 0 1rem;
+            background-color: rgb(255, 255, 255);
+
+            h2 {
+                color: rgb(0, 0, 0);
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            img{
+                width: 50%;
+            }
+
+            p {
+                color: rgb(0, 0, 0);
+                text-align: justify;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import actorsStyle from './Styles/Actors.module.scss'
 import { useFetch } from "../Hooks/useFetch";
 import { ActorsCard } from "../assets/Components/ActorsCard/ActorsCard"
-import { Button } from '../assets/Components/Buttons/Button';
+import { Modal } from '../assets/Components/Modal/Modal';
 export function Actors() {
 
   const actorsList = useFetch(`http://localhost:3000/actors`)
@@ -18,7 +18,7 @@ export function Actors() {
             key={index}
             actorImg={`http://localhost:3000/Assets/Images/actors/${item?.image}`}
             name={item.name}
-            decription={item.description.substring(0,450)}
+            decription={item.description}
           >
           </ActorsCard>
         )
