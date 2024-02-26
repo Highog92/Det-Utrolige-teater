@@ -1,3 +1,20 @@
+:root {
+    /* colors */
+    --grey: #999;
+    --darkgrey: #707070;
+    --white: #fff;
+    --black: #30454C;
+    --gold: #D39D5B;
+    --brown: #AD7A51;
+    --green: #61E692;
+    --darkGreen: #048904;
+    --red: #B10C0C;
+
+    /* //fonts */
+    --title: "Playfair Display", serif;
+    --text: "Titillium Web", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +22,9 @@
     font-family: Titillium Web, Playfair Display;
 }
 
-body{
+
+body {
     padding: 0 150px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap')

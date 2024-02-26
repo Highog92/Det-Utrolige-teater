@@ -1,13 +1,13 @@
 .navigation {
     display: flex;
-    background-color: #ffffff;
+    background-color: var(--white);
+    margin-bottom: 30px;
 
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        padding-top: 20px;
     }
 
     img {
@@ -28,7 +28,11 @@
         display: flex;
         text-decoration: none;
         align-items: center;
-        color: #707070;
+        color: var(--darkgrey);
+    }
+
+    a:hover {
+        color: var(--gold);
     }
 
     label {
@@ -37,14 +41,8 @@
         // position: relative;
     }
 
-
-    input {
-        padding: 10px;
-        border: none;
-        border-bottom: 1px solid;
-    }
-
 }
+
 
 
 @media (max-width: 750px) {
@@ -54,20 +52,13 @@
         ul {
             flex-direction: column;
         }
-
-        .pipes {
-            display: none;
-        }
     }
-
-
 }
 
 
 @media (max-width: 375px) {
 
     .navigation {
-
 
         nav {
             flex-direction: column;
@@ -76,9 +67,5 @@
         ul {
             flex-direction: column;
         }
-
-       
     }
-
-
 }

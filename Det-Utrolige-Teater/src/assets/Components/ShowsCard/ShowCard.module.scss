@@ -1,0 +1,30 @@
+.ShowCardStyle {
+  display: grid;
+  flex-direction: column;
+  border: 2px solid;
+  border-color: #D39D5B;
+  padding: 10px;
+
+  h2 {
+    font-family: var(--title);
+    color: var(--gold);
+    font-size: 2rem;
+  }
+
+  b {}
+
+  img {
+    display: block;
+    width: 100%;
+    border: 7px solid var(--gold);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+  }
+
+}
