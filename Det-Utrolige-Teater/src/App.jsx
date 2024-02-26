@@ -21,6 +21,9 @@ function App() {
             <Route path="/actors" index element={<Actors title='Actors' />} />
             <Route path="/login" index element={<Login title='Login' />} />
             <Route path="/signup" index element={<SignUp title='Signup' />} />
+            
+            <Route path="/showsevents" index element={<ShowsEvents title='SE ALLE FORESTILLINGER' />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

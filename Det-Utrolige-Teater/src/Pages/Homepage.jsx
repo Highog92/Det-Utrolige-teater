@@ -3,7 +3,7 @@ import { useFetch } from "../Hooks/useFetch";
 import { ShowCard } from '../assets/Components/ShowsCard/ShowCard';
 import { HeroCard } from '../assets/Components/HeroCard/HeroCard';
 import { Button } from '../assets/Components/Buttons/Button';
-
+import { Link } from 'react-router-dom';
 import kejserensNyeKlaeder from '../assets/Img/events/small/kejserens-nye-klaeder.jpg'
 import mitLivSomeTim from '../assets/Img/events/small/mit-liv-som-tim.jpg'
 import nordKraft from '../assets/Img/events/small/nordkraft.jpg'
@@ -48,11 +48,14 @@ export function Homepage() {
 
       </section>
       <div className={homepageStyle.moreEvents}>
-        <Button
-          text="SE ALLE FORESTILLINGER"
-          bgColor="var(--brown)"
-        // action={handleClick}
-        />
+        <Link to='/showsevents'>
+          <Button
+            text="SE ALLE FORESTILLINGER"
+            bgColor="var(--brown)"
+            
+          // action={handleClick}
+          />
+        </Link>
       </div>
     </section>
   )

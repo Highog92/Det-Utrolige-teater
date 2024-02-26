@@ -1,0 +1,30 @@
+.actorsCard {
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: end;
+    margin: 20px 0;
+    border-bottom: 1px solid #0000003a;
+    padding-bottom: 15px;
+
+    button {
+        display: flex;
+
+
+    }
+
+    h3 {
+        color: var(--darkgrey);
+        font-weight: light;
+        padding: 0px 20px;
+
+    }
+
+    p {
+        padding: 0px 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
