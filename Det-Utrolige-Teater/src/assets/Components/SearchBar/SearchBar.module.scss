@@ -4,9 +4,9 @@
     justify-content: end;
     margin-top: 20px;
 
+
     img {
         border-bottom: 1px solid;
-
     }
 
     input {
@@ -14,5 +14,18 @@
         padding-left: 5px;
         border: none;
         border-bottom: 1px solid;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .SearchBar {
+
+
+        input {
+            width: 100%;
+        }
+
     }
 }

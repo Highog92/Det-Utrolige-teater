@@ -11,11 +11,8 @@ export function ActorsCard({ actorImg, name, decription }) {
                 <p>{decription.substring(0, 450)}...</p>
             </figcaption>
             <Modal>
-                <img src={actorImg} alt="Actor" />
-                {/* <figcaption> */}
-                    <h3>{name}</h3>
-                    <p>{decription}</p>
-                {/* </figcaption> */}
+
+     
             </Modal>
         </figure>
 

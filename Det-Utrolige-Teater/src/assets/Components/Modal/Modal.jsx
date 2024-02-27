@@ -46,9 +46,9 @@ export const Modal = (props) => {
                     <dialog open/* ={modalOpen} */ className={style.modal} style={{ backgroundColor: modalColor }} onClick={handleOutsideClick}>
                         <div className={style.modalContent} style={{ backgroundColor: modalColor }}>
                             <span className={style.close} onClick={closeModal}>&times;</span>
-                            <article style={{ color: modalFontColor, fontFamily: modalFontFamily }}>
+                            <figcaption style={{ color: modalFontColor, fontFamily: modalFontFamily }}>
                                 {props.children}
-                            </article>
+                            </figcaption>
                                
                         </div>
 

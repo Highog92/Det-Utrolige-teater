@@ -28,3 +28,23 @@
         width: 100%;
     }
 }
+
+
+@media (max-width: 750px) {
+
+    .actorsCard {
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .actorsCard {
+
+        grid-template-columns: 1fr;
+    }
+
+
+}

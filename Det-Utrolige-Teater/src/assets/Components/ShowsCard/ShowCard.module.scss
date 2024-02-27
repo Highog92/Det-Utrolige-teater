@@ -11,7 +11,10 @@
     font-size: 2rem;
   }
 
-  b {}
+ 
+  b {
+    border-bottom: 1px solid var(--black);
+  }
 
   img {
     display: block;
@@ -28,3 +31,5 @@
   }
 
 }
+
+

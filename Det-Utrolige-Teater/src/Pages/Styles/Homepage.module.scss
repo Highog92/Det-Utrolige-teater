@@ -1,8 +1,6 @@
 .homepage {
 
     header {
-        // display: grid;
-        // grid-template-columns: 1fr 2fr;
         border: 2px solid;
         border-color: var(--gold)
     }
@@ -25,3 +23,17 @@
     text-align: end;
 
 }
+
+
+@media (max-width: 750px) {
+
+    .showCardWrapper {
+        grid-template-columns: 1fr;
+        margin: 5px;
+padding: 10px;
+    }
+  
+  }
+  
+  
+  @media (max-width: 375px) {}

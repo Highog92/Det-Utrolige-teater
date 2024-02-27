@@ -13,9 +13,9 @@ export function Homepage() {
 
   const eventImages = [kejserensNyeKlaeder, mitLivSomeTim, nordKraft];
 
-  const events = useFetch(`http://localhost:3000/events`)
+  const events = useFetch(`http://localhost:3000/events?attributes=image,price,startdate,stopdate,title`)
   console.log(events, "eventliste");
-
+  
   return (
     <section className={homepageStyle.homepage}>
       <header className={homepageStyle.hero}>
@@ -33,14 +33,16 @@ export function Homepage() {
       </header>
       <section className={homepageStyle.showCardWrapper}>
 
-        {events?.slice(2, 5).map((item) => {
+        {events?.slice(2, 5).map((item, index) => {
           return (
             <ShowCard
               key={item.id}
+              startDate={item.startdate}
+              stopDate={item.stopdate}
               stage={item.stage.name}
               title={item.title}
               genre={item.genre.name}
-              imgSrc={kejserensNyeKlaeder}
+              imgSrc={eventImages[index]}
             />
 
           )
@@ -52,7 +54,7 @@ export function Homepage() {
           <Button
             text="SE ALLE FORESTILLINGER"
             bgColor="var(--brown)"
-            
+
           // action={handleClick}
           />
         </Link>

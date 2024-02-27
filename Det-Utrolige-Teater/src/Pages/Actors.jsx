@@ -23,7 +23,7 @@ export function Actors() {
           </ActorsCard>
         )
       })}
-
+      {/* <Modal></Modal> */}
     </section>
   )
 }
