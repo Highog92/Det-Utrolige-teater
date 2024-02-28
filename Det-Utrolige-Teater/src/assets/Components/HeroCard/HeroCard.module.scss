@@ -8,6 +8,12 @@
     margin: 20px;
   }
 
+  h2 {
+    font-family: var(--title);
+    color: var(--gold);
+    font-size: 3rem;
+  }
+
   b {
     border-bottom: 1px solid var(--black);
   }
