@@ -7,19 +7,20 @@ import { Link } from 'react-router-dom';
 import kejserensNyeKlaeder from '../assets/Img/events/small/kejserens-nye-klaeder.jpg'
 import mitLivSomeTim from '../assets/Img/events/small/mit-liv-som-tim.jpg'
 import nordKraft from '../assets/Img/events/small/nordkraft.jpg'
+import bugsyMalone from '../assets/Img/events/medium/bugsy-malone.jpg'
 
 export function Homepage() {
 
 
-  const eventImages = [kejserensNyeKlaeder, mitLivSomeTim, nordKraft];
+  const eventImages = [kejserensNyeKlaeder, mitLivSomeTim, nordKraft, bugsyMalone];
 
   const events = useFetch(`http://localhost:3000/events?attributes=image,price,startdate,stopdate,title`)
   console.log(events, "eventliste");
-  
+
   return (
     <section className={homepageStyle.homepage}>
       <header className={homepageStyle.hero}>
-        {events?.slice(1, 2).map((item) => {
+        {events?.slice(1, 2).map((item, index) => {
           return (
             <HeroCard
               key={item.id}
@@ -27,6 +28,8 @@ export function Homepage() {
               date={'14.  2023 - 10 februar 2023'}
               title={item.title}
               genre={item.genre.name}
+              imgSrc={eventImages[index, 3]}
+
             />
           )
         })}
@@ -54,8 +57,6 @@ export function Homepage() {
           <Button
             text="SE ALLE FORESTILLINGER"
             bgColor="var(--brown)"
-
-          // action={handleClick}
           />
         </Link>
       </div>

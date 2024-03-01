@@ -3,10 +3,11 @@
     flex-direction: row;
     justify-content: end;
     margin-top: 20px;
-
+    align-items: end;
 
     img {
         border-bottom: 1px solid;
+        
     }
 
     input {
@@ -15,13 +16,17 @@
         border: none;
         border-bottom: 1px solid;
     }
+
+    a{
+        // margin: 0;
+        // padding: 0;
+    }
 }
 
 
 @media (max-width: 375px) {
 
     .SearchBar {
-
 
         input {
             width: 100%;

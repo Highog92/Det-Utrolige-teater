@@ -1,0 +1,40 @@
+.searchCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--gold);
+    margin: 20px 0;
+    padding: 10px;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    h2 {
+        display: flex;
+        font-family: var(--title);
+        color: var(--gold);
+        font-size: 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    b {
+        border-bottom: 1px solid var(--black);
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+}

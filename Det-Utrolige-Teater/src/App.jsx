@@ -6,6 +6,7 @@ import { ShowsEvents } from './Pages/Shows&Events';
 import { Actors } from './Pages/Actors';
 import { SignUp } from './Pages/SignUp';
 import { Login } from './Pages/Login';
+import { SearchPage } from './Pages/SearchPage';
 
 function App() {
 
@@ -21,9 +22,9 @@ function App() {
             <Route path="/actors" index element={<Actors title='Actors' />} />
             <Route path="/login" index element={<Login title='Login' />} />
             <Route path="/signup" index element={<SignUp title='Signup' />} />
-            
             <Route path="/showsevents" index element={<ShowsEvents title='SE ALLE FORESTILLINGER' />} />
-
+            <Route path="/searchPage/:slug" element={<SearchPage />} />
+            <Route path="/searchPage" element={<SearchPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

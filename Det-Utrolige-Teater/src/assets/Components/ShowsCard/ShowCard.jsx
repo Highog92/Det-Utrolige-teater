@@ -22,13 +22,11 @@ export const ShowCard = ({ stage, startDate, stopDate, title, genre, imgSrc }) =
         <Button
           text="LÆS MERE"
           bgColor="var(--black)"
-        // action={handleClick}
 
         />
         <Button
           text="KØB BILLET"
           bgColor="var(--gold)"
-        // action={handleClick}
         />
       </footer>
     </figure>
