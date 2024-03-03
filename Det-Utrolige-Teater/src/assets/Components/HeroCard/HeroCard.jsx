@@ -1,6 +1,6 @@
 import heroCardStyle from "./HeroCard.module.scss";
 import bugsy_malone from '../../Img/events/large/bugsy-malone.jpg'
-export const HeroCard = ({ stage, startDate, stopDate, title, genre, imgSrc }) => {
+export const HeroCard = ({ stage, startDate, stopDate, title, genre, imgSrc, altTag }) => {
  
  
   let start = new Date(startDate)
@@ -18,7 +18,7 @@ export const HeroCard = ({ stage, startDate, stopDate, title, genre, imgSrc }) =
         <h2>{title}</h2>
         <h3>{genre}</h3>
       </section>
-      <img src={imgSrc} alt="bugsy malone show"></img>
+      <img src={imgSrc} alt={altTag}></img>
     </div>
 
   );

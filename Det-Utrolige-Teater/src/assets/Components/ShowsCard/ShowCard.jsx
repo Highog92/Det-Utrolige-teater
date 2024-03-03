@@ -1,6 +1,6 @@
 import style from "./ShowCard.module.scss";
 import { Button } from "../Buttons/Button";
-export const ShowCard = ({ stage, startDate, stopDate, title, genre, imgSrc }) => {
+export const ShowCard = ({ stage, startDate, stopDate, title, genre, imgSrc, altTag }) => {
 
   let start = new Date(startDate)
   let startConversion = start.toLocaleDateString("da-DK")
@@ -10,7 +10,7 @@ export const ShowCard = ({ stage, startDate, stopDate, title, genre, imgSrc }) =
 
   return (
     <figure className={style.ShowCardStyle}>
-      <img src={imgSrc} alt="show" />
+      <img src={imgSrc} alt={altTag} />
       <figcaption>
         <p>{stage}</p>
         <p><b>{startConversion} - {stopConversion}</b></p>

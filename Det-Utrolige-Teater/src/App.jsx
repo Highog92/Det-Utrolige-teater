@@ -23,7 +23,7 @@ function App() {
             <Route path="/login" index element={<Login title='Login' />} />
             <Route path="/signup" index element={<SignUp title='Signup' />} />
             <Route path="/showsevents" index element={<ShowsEvents title='SE ALLE FORESTILLINGER' />} />
-            <Route path="/searchPage/:slug" element={<SearchPage />} />
+            <Route path="/searchPage/:searchWord" element={<SearchPage />} />
             <Route path="/searchPage" element={<SearchPage />} />
           </Route>
         </Routes>

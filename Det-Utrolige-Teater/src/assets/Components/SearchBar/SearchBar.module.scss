@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: end;
     margin-top: 20px;
-    align-items: end;
+    align-items: center;
 
     img {
         border-bottom: 1px solid;
@@ -12,15 +12,14 @@
 
     input {
 
-        padding-left: 5px;
+        padding: 3px;
         border: none;
         border-bottom: 1px solid;
     }
 
-    a{
-        // margin: 0;
-        // padding: 0;
-    }
+   a{
+    
+   }
 }
 
 

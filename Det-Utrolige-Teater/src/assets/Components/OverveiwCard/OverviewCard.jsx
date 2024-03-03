@@ -1,4 +1,4 @@
-import searchCardstyle from "./OverviewCard.module.scss";
+import overviewCardstyle from "./OverviewCard.module.scss";
 import { Button } from "../Buttons/Button";
 
 
@@ -12,7 +12,7 @@ export const OverviewCard = ({ stage, startDate, stopDate, title, imgSrc }) => {
     let stopConversion = stop.toLocaleDateString("da-DK")
 
     return (
-        <figure className={searchCardstyle.searchCard}>
+        <figure className={overviewCardstyle.OverviewCard}>
             <div>
                 <img src={imgSrc} alt="show" />
             </div>

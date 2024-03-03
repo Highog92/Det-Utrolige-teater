@@ -19,6 +19,7 @@ export function Actors() {
             actorImg={`http://localhost:3000/Assets/Images/actors/${item?.image}`}
             name={item.name}
             decription={item.description}
+            altTag={item.image}
           >
           </ActorsCard>
         )

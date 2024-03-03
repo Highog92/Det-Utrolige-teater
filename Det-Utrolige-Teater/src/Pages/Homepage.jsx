@@ -26,10 +26,10 @@ export function Homepage() {
               key={item.id}
               stage={item.stage.name}
               date={'14.  2023 - 10 februar 2023'}
-              title={item.title}
+              title={item.title?.toUpperCase()}
               genre={item.genre.name}
               imgSrc={eventImages[index, 3]}
-
+              altTag={item.image}
             />
           )
         })}
@@ -43,9 +43,10 @@ export function Homepage() {
               startDate={item.startdate}
               stopDate={item.stopdate}
               stage={item.stage.name}
-              title={item.title}
+              title={item.title?.toUpperCase()}
               genre={item.genre.name}
               imgSrc={eventImages[index]}
+              altTag={item.image}
             />
 
           )
